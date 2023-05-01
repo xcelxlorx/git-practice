@@ -1,4 +1,4 @@
-def do_fizzbuzz():
+def do_fizzbuzz(num):
     """
     fizzbuzz: print fizz buzz fizzbuzz
     3 : fizz
@@ -6,9 +6,13 @@ def do_fizzbuzz():
     15: fizzbuzz
     etc: num
     """
+    for i in range(1, num + 1):
+        if i % 3 == 0:
+            print('fizz')
+        else: 
+            print(f'{i}')
 
-    print('hello')
 
 if __name__=='__main__':
-    do_fizzbuzz()
+    do_fizzbuzz(16)
 
